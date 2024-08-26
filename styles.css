@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.quote-box {
+    grid-column: 1;
+    grid-row-start:1;
+    grid-row-end: 2;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 70px;
+    box-sizing: border-box;
+    height: 700px;
+    font-size: 24px;
+}
+
+.image-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.character-box {
+    position:absolute;
+    top: 550px;
+    left: 150px;
+    background-color: #b25a5a;
+    padding:20px;
+    color: #ffffff;
+    box-sizing: border-box;
+    height: 150px;
+    width: 400px;
+    margin-top: 0px;
+    
+}
+
+.art-box {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 0px;
+    padding-top: 0px;
+    position:relative;
+    top: 0px;
+}
+
+.proin-box {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    background-color: #b25a5a;
+    padding: 20px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.feature-box {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    background-color: #9575cd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tennis-box {
+    grid-column: 2 / 3;
+    grid-row: 4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.city-box {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact-box {
+    grid-column: 2 / 3;
+    grid-row: 5;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box input, .contact-box textarea {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    /* border: none; */
+    box-sizing: border-box;
+}
+.contact-box textarea{
+    padding: 100px;
+}
+.contact-box textarea::placeholder{
+    position: absolute;
+    top: 0%;
+    left:2%; 
+}
+
+.contact-box button {
+    background-color: #9575cd;
+    width: 1.5in;
+    color: #ffffff;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 380px;
+}
+
+.footer-box {
+    /* grid-column: 1; */
+    grid-row: 6;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.footer-box img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.purple-box {
+    grid-column: 2 / 3;
+    grid-row: 6;
+    background-color: #9575cd;
+    padding: 80px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+}
+
+.image-box img, .art-box img, .tennis-box img, .city-box img {
+    width: 100%;
+    display: block;
+}
